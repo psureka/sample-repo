@@ -1,8 +1,28 @@
-<ul >
-  {{#events}}
-    <li>
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
-    </li>
+ <script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+function myFunction1() {
+
+ document.getElementById("myComment").contentEditable = true;
+}
+</script>
+ <div class="row" >
+  {{#
+  }}
+  &nbsp;
+  <div  style="width:40%;overflow: hidden;
+     white-space: nowrap;float: left;
+">    
+       <div  style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 40%">
+        <img src="https://storage.cloud.google.com/roidtc-0323-attendee128/avengers.jpg" style="width:100%;height:50%">
+        <div style="padding: 2px 16px;" >
+        <h4><b>{{ title }}</b></h4> 
+        <p id="myComment">{{ description }}</p> 
+        &nbsp;<i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size:24px"></i>
+        <button onclick="myFunction1()">Update</button>
+  </div>
+</div>
+  </div>
   {{/events}}
-</ul>
+ </div>
